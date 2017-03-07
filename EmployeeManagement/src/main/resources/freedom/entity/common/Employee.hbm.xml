@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.freedom.model.Employee" table="EMPLOYEE" catalog="freedomem1">
+        <id name="ssn" type="string">
+            <column name="Ssn" sql-type="char(9)"/>
+        </id>
+        <property name="empId" type="java.lang.Integer">
+            <column name="EmpId"/>
+        </property>
+        <property name="firstName" type="string">
+            <column name="Fname"/>
+        </property>
+        <property name="middleName" type="string">
+            <column name="Mname"/>
+        </property>
+        <property name="lastName" type="string">
+            <column name="Lname"/>
+        </property>
+        <property name="address" type="string">
+            <column name="Address"/>
+        </property>
+         <property name="sex" type="string">
+            <column name="Sex"/>
+        </property>
+        <property name="superSsn" type="string">
+            <column name="Super_ssn" sql-type="char(9)"/>
+        </property>
+        <property name="deptNumber" type="java.lang.Integer">
+            <column name="Dno"/>
+        </property>
+        
+    </class>
+    
+	
+</hibernate-mapping>
